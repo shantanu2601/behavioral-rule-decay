@@ -1,0 +1,2221 @@
+
+================================================================================
+Adload  (60 rules)
+================================================================================
+adload_480     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] PostMessageA>NtQueryInformationThread>NtDuplicateObject
+      [artifact /network ] all.fingersleep.bid
+adload_481     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] getaddrinfo>NtCreateFile>NtCreateSection
+      [artifact /network ] all.fingersleep.bid
+adload_482     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegCloseKey>getaddrinfo>NtCreateFile
+      [artifact /network ] all.fingersleep.bid
+adload_483     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetFileVersionInfoW>RegCloseKey>RegOpenKeyExW
+      [artifact /network ] all.fingersleep.bid
+adload_484     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetFileVersionInfoSizeW>GetFileVersionInfoW>RegCloseKey
+      [artifact /network ] all.fingersleep.bid
+adload_485     mixed           prec=1.0 cov=21
+      [artifact /network ] all.fingersleep.bid
+      [mechanism/api_seq ] RegQueryValueExW>GetFileVersionInfoSizeW>GetFileVersionInfoW
+adload_486     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetSystemMetrics>RegOpenKeyExA>RegQueryValueExA
+      [artifact /network ] all.fingersleep.bid
+adload_487     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegCloseKey>GetSystemMetrics>RegOpenKeyExA
+      [artifact /network ] all.fingersleep.bid
+adload_488     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>RegCloseKey>GetSystemMetrics
+      [artifact /network ] all.fingersleep.bid
+adload_489     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetUserNameW>LdrGetDllHandle>RegOpenKeyExW
+      [artifact /network ] all.fingersleep.bid
+adload_490     mixed           prec=1.0 cov=21
+      [artifact /network ] all.fingersleep.bid
+      [mechanism/api_seq ] RegQueryValueExA>RegCloseKey>GetUserNameW
+adload_491     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegCloseKey>RegEnumKeyW>RegQueryValueExA
+      [artifact /network ] all.fingersleep.bid
+adload_492     mixed           prec=1.0 cov=21
+      [artifact /network ] all.fingersleep.bid
+      [mechanism/api_seq ] RegOpenKeyExW>RegEnumKeyW>RegQueryValueExA
+adload_493     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegQueryValueExA>RegCloseKey>RegEnumKeyW
+      [artifact /network ] all.fingersleep.bid
+adload_494     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegEnumKeyW>RegQueryValueExA>RegCloseKey
+      [artifact /network ] all.fingersleep.bid
+adload_495     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegOpenKeyExW>RegQueryValueExW>GetFileVersionInfoSizeW
+      [artifact /network ] all.fingersleep.bid
+adload_496     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] ShellExecuteExW>WSAStartup>ChangeWindowMessageFilter
+      [artifact /network ] all.fingersleep.bid
+adload_497     mixed           prec=1.0 cov=21
+      [artifact /network ] all.fingersleep.bid
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_498     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegCloseKey>GetUserNameW>LdrGetDllHandle
+      [artifact /network ] all.fingersleep.bid
+adload_499     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>LdrGetDllHandle>SetUnhandledExceptionFilter
+      [artifact /network ] all.fingersleep.bid
+adload_500     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [artifact /network ] all.fingersleep.bid
+adload_501     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [artifact /network ] all.fingersleep.bid
+adload_502     artifact_only   prec=1.0 cov=21
+      [artifact /network ] none.coalrate.men
+      [artifact /network ] all.fingersleep.bid
+adload_503     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] PostMessageA>NtQueryInformationThread>NtDuplicateObject
+      [artifact /network ] none.coalrate.men
+adload_504     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] getaddrinfo>NtCreateFile>NtCreateSection
+      [artifact /network ] none.coalrate.men
+adload_505     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] RegCloseKey>getaddrinfo>NtCreateFile
+      [artifact /network ] none.coalrate.men
+adload_506     mixed           prec=1.0 cov=21
+      [artifact /network ] none.coalrate.men
+      [mechanism/api_seq ] GetFileVersionInfoW>RegCloseKey>RegOpenKeyExW
+adload_507     mixed           prec=1.0 cov=21
+      [artifact /network ] none.coalrate.men
+      [mechanism/api_seq ] GetFileVersionInfoSizeW>GetFileVersionInfoW>RegCloseKey
+adload_508     mixed           prec=1.0 cov=21
+      [artifact /network ] none.coalrate.men
+      [mechanism/api_seq ] RegQueryValueExW>GetFileVersionInfoSizeW>GetFileVersionInfoW
+adload_509     mixed           prec=1.0 cov=21
+      [mechanism/api_seq ] GetSystemMetrics>RegOpenKeyExA>RegQueryValueExA
+      [artifact /network ] none.coalrate.men
+adload_510     mechanism_only  prec=1.0 cov=65
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+adload_511     mechanism_only  prec=1.0 cov=63
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+adload_512     mechanism_only  prec=1.0 cov=63
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+adload_513     mechanism_only  prec=1.0 cov=63
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_514     mechanism_only  prec=1.0 cov=63
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_515     mechanism_only  prec=1.0 cov=63
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+adload_516     mechanism_only  prec=1.0 cov=63
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_517     mechanism_only  prec=1.0 cov=61
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_518     mechanism_only  prec=1.0 cov=61
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_519     mechanism_only  prec=1.0 cov=61
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_520     mechanism_only  prec=1.0 cov=61
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+      [mechanism/api_seq ] LdrGetDllHandle>VirtualProtectEx>NtFreeVirtualMemory
+adload_521     mechanism_only  prec=1.0 cov=50
+      [mechanism/api_seq ] GetSystemTime>VirtualProtectEx>GetSystemTime
+      [mechanism/api_seq ] VirtualProtectEx>LdrLoadDll>LdrGetProcedureAddress
+adload_522     mechanism_only  prec=1.0 cov=50
+      [mechanism/api_seq ] VirtualProtectEx>GetSystemTime>LdrGetProcedureAddress
+      [mechanism/api_seq ] GetSystemTime>VirtualProtectEx>GetSystemTime
+      [mechanism/api_seq ] VirtualProtectEx>LdrLoadDll>LdrGetProcedureAddress
+adload_523     mechanism_only  prec=0.9804 cov=50
+      [mechanism/api_seq ] VirtualProtectEx>GetSystemTime>LdrGetProcedureAddress
+      [mechanism/api_seq ] GetSystemTime>VirtualProtectEx>GetSystemTime
+adload_524     mechanism_only  prec=1.0 cov=33
+      [mechanism/api_seq ] VirtualProtectEx>NtDeviceIoControlFile>NtClose
+      [mechanism/api_seq ] LdrGetProcedureAddress>VirtualProtectEx>NtDeviceIoControlFile
+adload_525     mechanism_only  prec=1.0 cov=33
+      [mechanism/api_seq ] LdrGetProcedureAddress>VirtualProtectEx>NtDeviceIoControlFile
+      [mechanism/api_seq ] VirtualProtectEx>LdrLoadDll>LdrGetProcedureAddress
+adload_526     mechanism_only  prec=1.0 cov=33
+      [mechanism/api_seq ] VirtualProtectEx>NtDeviceIoControlFile>NtClose
+      [mechanism/api_seq ] VirtualProtectEx>LdrLoadDll>LdrGetProcedureAddress
+adload_527     mechanism_only  prec=1.0 cov=33
+      [mechanism/api_seq ] VirtualProtectEx>NtDeviceIoControlFile>NtClose
+      [mechanism/api_seq ] LdrGetProcedureAddress>VirtualProtectEx>NtDeviceIoControlFile
+      [mechanism/api_seq ] VirtualProtectEx>LdrLoadDll>LdrGetProcedureAddress
+adload_528     mechanism_only  prec=1.0 cov=30
+      [mechanism/api_seq ] SetUnhandledExceptionFilter>LdrGetDllHandle>GetFileVersionInfoSizeW
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+adload_529     mechanism_only  prec=1.0 cov=30
+      [mechanism/api_seq ] SetUnhandledExceptionFilter>LdrGetDllHandle>GetFileVersionInfoSizeW
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+adload_530     mechanism_only  prec=1.0 cov=30
+      [mechanism/api_seq ] SetUnhandledExceptionFilter>LdrGetDllHandle>GetFileVersionInfoSizeW
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+adload_531     mechanism_only  prec=1.0 cov=30
+      [mechanism/api_seq ] SetUnhandledExceptionFilter>LdrGetDllHandle>GetFileVersionInfoSizeW
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+adload_532     mechanism_only  prec=1.0 cov=30
+      [mechanism/api_seq ] SetUnhandledExceptionFilter>LdrGetDllHandle>GetFileVersionInfoSizeW
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+adload_533     mechanism_only  prec=1.0 cov=30
+      [mechanism/api_seq ] SetUnhandledExceptionFilter>LdrGetDllHandle>GetFileVersionInfoSizeW
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+adload_534     mechanism_only  prec=1.0 cov=30
+      [mechanism/api_seq ] SetUnhandledExceptionFilter>LdrGetDllHandle>GetFileVersionInfoSizeW
+      [mechanism/api_seq ] GetSystemTime>SetUnhandledExceptionFilter>LdrGetDllHandle
+      [mechanism/api_seq ] LdrLoadDll>GetSystemTime>SetUnhandledExceptionFilter
+      [mechanism/api_seq ] NtDelayExecution>NtAllocateVirtualMemory>VirtualProtectEx
+adload_535     mechanism_only  prec=1.0 cov=29
+      [mechanism/api_seq ] LdrGetProcedureAddress>VirtualProtectEx>NtDeviceIoControlFile
+      [mechanism/api_seq ] HeapCreate>memcpy>NtAllocateVirtualMemory
+adload_536     mechanism_only  prec=1.0 cov=29
+      [mechanism/api_seq ] VirtualProtectEx>NtDeviceIoControlFile>NtClose
+      [mechanism/api_seq ] HeapCreate>memcpy>NtAllocateVirtualMemory
+adload_537     mechanism_only  prec=1.0 cov=29
+      [mechanism/api_seq ] VirtualProtectEx>LdrLoadDll>LdrGetProcedureAddress
+      [mechanism/api_seq ] HeapCreate>memcpy>NtAllocateVirtualMemory
+adload_538     mechanism_only  prec=1.0 cov=29
+      [mechanism/api_seq ] VirtualProtectEx>GetSystemTime>LdrGetProcedureAddress
+      [mechanism/api_seq ] GetSystemTime>LdrGetProcedureAddress>VirtualProtectEx
+adload_539     mechanism_only  prec=1.0 cov=29
+      [mechanism/api_seq ] LdrGetProcedureAddress>VirtualProtectEx>LdrLoadDll
+      [mechanism/api_seq ] GetSystemTime>LdrGetProcedureAddress>VirtualProtectEx
+
+================================================================================
+Emotet  (60 rules)
+================================================================================
+emotet_0       artifact_only   prec=1.0 cov=3406
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_1       mixed           prec=1.0 cov=3404
+      [artifact /mutex   ] Global\M5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_2       mixed           prec=1.0 cov=3404
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_3       mixed           prec=1.0 cov=3404
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_4       mixed           prec=1.0 cov=3404
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\M5C3A8244
+emotet_5       mixed           prec=1.0 cov=3404
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_6       mixed           prec=1.0 cov=3404
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_7       mixed           prec=1.0 cov=3404
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_8       mixed           prec=1.0 cov=3404
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\M5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_9       mixed           prec=1.0 cov=3404
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_10      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [artifact /mutex   ] Global\M5C3A8244
+emotet_11      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_12      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_13      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\M5C3A8244
+emotet_14      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [artifact /mutex   ] Global\M5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_15      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_16      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_17      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_18      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_19      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_20      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\M5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_21      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\M5C3A8244
+emotet_22      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_23      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_24      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\M5C3A8244
+emotet_25      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\M5C3A8244
+emotet_26      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_27      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_28      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_29      mixed           prec=1.0 cov=3393
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [artifact /mutex   ] Global\M5C3A8244
+      [artifact /mutex   ] Global\I5C3A8244
+emotet_30      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_31      mechanism_only  prec=1.0 cov=2283
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_32      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_33      mechanism_only  prec=1.0 cov=2283
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtWaitForSingleObject>NtCreateMutant>NtCreateEvent
+emotet_34      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtCreateMutant>NtCreateEvent>NtReleaseMutant
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_35      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_36      mechanism_only  prec=1.0 cov=2283
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+emotet_37      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_38      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_39      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_40      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtCreateMutant>NtCreateEvent>NtReleaseMutant
+      [mechanism/api_seq ] NtWaitForSingleObject>NtCreateMutant>NtCreateEvent
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_41      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_42      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+emotet_43      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+emotet_44      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+emotet_45      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+emotet_46      mechanism_only  prec=1.0 cov=2283
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_47      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_48      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_49      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+emotet_50      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+emotet_51      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+emotet_52      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+emotet_53      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_54      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_55      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtMapViewOfSection>NtQueryInformationFile>NtUnmapViewOfSection
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_56      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_57      mechanism_only  prec=1.0 cov=2283
+      [mechanism/api_seq ] NtQueryInformationFile>NtUnmapViewOfSection>NtClose
+      [mechanism/api_seq ] NtCreateEvent>NtReleaseMutant>LdrLoadDll
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+emotet_58      mechanism_only  prec=1.0 cov=2282
+      [mechanism/api_seq ] NtUnmapViewOfSection>NtClose>GetComputerNameW
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtWaitForSingleObject>NtCreateMutant>NtCreateEvent
+emotet_59      mechanism_only  prec=1.0 cov=2282
+      [mechanism/file    ] %LOCALAPPDATA%\Microsoft\Windows\
+      [mechanism/api_seq ] NtWaitForSingleObject>NtCreateMutant>NtCreateEvent
+      [mechanism/api_seq ] OpenSCManagerW>GetSystemTimeAsFileTime>SHGetFolderPathW
+
+================================================================================
+HarHar  (60 rules)
+================================================================================
+harhar_540     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+harhar_541     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+harhar_542     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+harhar_543     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+harhar_544     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+harhar_545     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_546     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+harhar_547     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+harhar_548     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_549     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_550     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+harhar_551     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+harhar_552     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+harhar_553     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+harhar_554     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+harhar_555     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+harhar_556     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+harhar_557     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+harhar_558     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+harhar_559     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+harhar_560     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+harhar_561     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_562     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_563     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_564     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_565     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_566     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_567     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+harhar_568     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+harhar_569     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+harhar_570     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+harhar_571     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+harhar_572     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_573     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+harhar_574     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] LdrGetProcedureAddress>SetUnhandledExceptionFilter>NtQueryInformationThread
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+harhar_575     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+harhar_576     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+harhar_577     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+harhar_578     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrGetDllHandle
+harhar_579     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_580     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_581     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_582     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_583     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_584     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_585     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_586     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_587     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_588     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_589     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] NtClose>NtUnmapViewOfSection>closesocket
+harhar_590     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtUnmapViewOfSection>closesocket>socket
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+harhar_591     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] closesocket>socket>closesocket
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+harhar_592     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetDllHandle>NtTerminateProcess
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+harhar_593     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_594     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+harhar_595     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_596     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] socket>GetSystemTimeAsFileTime>NtWaitForSingleObject
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+harhar_597     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtWaitForSingleObject>NtAllocateVirtualMemory>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+harhar_598     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQueryAttributesFile
+harhar_599     mechanism_only  prec=1.0 cov=329
+      [mechanism/api_seq ] socket>closesocket>NtCreateFile
+      [mechanism/api_seq ] NtOpenSection>NtQueryAttributesFile>LdrLoadDll
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtOpenSection
+
+================================================================================
+Lokibot  (60 rules)
+================================================================================
+lokibot_240    mixed           prec=1.0 cov=1133
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_241    mixed           prec=1.0 cov=1133
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_242    mixed           prec=1.0 cov=1132
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_243    mixed           prec=1.0 cov=1132
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_244    mixed           prec=1.0 cov=1132
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_245    mixed           prec=1.0 cov=1131
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_246    mixed           prec=1.0 cov=1130
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_247    mixed           prec=1.0 cov=1130
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_248    mixed           prec=1.0 cov=1130
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_249    mixed           prec=1.0 cov=1130
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_250    mixed           prec=1.0 cov=1130
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_251    mixed           prec=1.0 cov=1130
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_252    mixed           prec=1.0 cov=1129
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_253    mixed           prec=1.0 cov=1129
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_254    mixed           prec=1.0 cov=1129
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_255    mixed           prec=1.0 cov=1129
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_256    mixed           prec=1.0 cov=1129
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_257    mixed           prec=1.0 cov=1128
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_258    mixed           prec=1.0 cov=1128
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_259    mixed           prec=1.0 cov=1128
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_260    mixed           prec=1.0 cov=1128
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_261    mixed           prec=1.0 cov=1128
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_262    mixed           prec=1.0 cov=1128
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_263    mixed           prec=1.0 cov=1128
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_264    mixed           prec=1.0 cov=1127
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_265    mixed           prec=1.0 cov=1127
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_266    mixed           prec=1.0 cov=1127
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_267    mixed           prec=1.0 cov=1126
+      [mechanism/api_seq ] WSAStartup>LdrLoadDll>RegOpenKeyExA
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+lokibot_268    mixed           prec=1.0 cov=1126
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] RegQueryValueExA>LdrLoadDll>RegCloseKey
+lokibot_269    mixed           prec=1.0 cov=1126
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [artifact /mutex   ] 14E11E0BF783BCDB0BD10C30
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_270    mechanism_only  prec=1.0 cov=1143
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+lokibot_271    mechanism_only  prec=1.0 cov=1142
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+lokibot_272    mechanism_only  prec=1.0 cov=1142
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+lokibot_273    mechanism_only  prec=1.0 cov=1141
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+lokibot_274    mechanism_only  prec=1.0 cov=1141
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+lokibot_275    mechanism_only  prec=1.0 cov=1141
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+lokibot_276    mechanism_only  prec=1.0 cov=1134
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] WSAStartup>LdrLoadDll>RegOpenKeyExA
+lokibot_277    mechanism_only  prec=1.0 cov=1132
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] WSAStartup>LdrLoadDll>RegOpenKeyExA
+lokibot_278    mechanism_only  prec=1.0 cov=1131
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] WSAStartup>LdrLoadDll>RegOpenKeyExA
+lokibot_279    mechanism_only  prec=1.0 cov=1131
+      [mechanism/api_seq ] WSAStartup>LdrLoadDll>RegOpenKeyExA
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+lokibot_280    mechanism_only  prec=1.0 cov=1129
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_281    mechanism_only  prec=1.0 cov=1129
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+lokibot_282    mechanism_only  prec=1.0 cov=1129
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+lokibot_283    mechanism_only  prec=1.0 cov=1128
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+lokibot_284    mechanism_only  prec=1.0 cov=1128
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+lokibot_285    mechanism_only  prec=1.0 cov=1127
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_286    mechanism_only  prec=1.0 cov=1127
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_287    mechanism_only  prec=1.0 cov=1126
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_288    mechanism_only  prec=1.0 cov=1126
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_289    mechanism_only  prec=1.0 cov=1126
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_290    mechanism_only  prec=1.0 cov=1126
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_291    mechanism_only  prec=1.0 cov=1125
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_292    mechanism_only  prec=1.0 cov=1125
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_293    mechanism_only  prec=1.0 cov=1125
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_294    mechanism_only  prec=1.0 cov=1124
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_295    mechanism_only  prec=1.0 cov=1124
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_296    mechanism_only  prec=1.0 cov=1123
+      [mechanism/api_seq ] LdrLoadDll>RegQueryValueExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_297    mechanism_only  prec=1.0 cov=1123
+      [mechanism/api_seq ] LdrLoadDll>RegOpenKeyExA>LdrLoadDll
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_298    mechanism_only  prec=1.0 cov=1123
+      [mechanism/api_seq ] RegOpenKeyExA>LdrLoadDll>RegQueryValueExA
+      [mechanism/api_seq ] LdrLoadDll>RegCloseKey>LdrLoadDll
+      [mechanism/api_seq ] SHGetFolderPathW>LdrLoadDll>NtQueryAttributesFile
+lokibot_299    mechanism_only  prec=1.0 cov=1122
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrLoadDll>NtQueryAttributesFile
+      [mechanism/api_seq ] WSAStartup>LdrLoadDll>RegOpenKeyExA
+
+================================================================================
+Qakbot  (60 rules)
+================================================================================
+qakbot_120     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] NtReleaseMutant>GetLocalTime>NtWaitForSingleObject
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_121     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQueryAttributesFile>CreateDirectoryW>GetSystemTimeAsFileTime
+qakbot_122     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQuerySystemInformation>NtDuplicateObject>NtClose
+qakbot_123     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtQuerySystemInformation>NtDuplicateObject
+qakbot_124     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtOpenProcess>NtQuerySystemInformation
+qakbot_125     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>Process32NextW>GetSystemTimeAsFileTime
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_126     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] Process32NextW>GetSystemTimeAsFileTime>Process32NextW
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_127     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtDelayExecution>Process32NextW>GetSystemTimeAsFileTime
+qakbot_128     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] NtWaitForSingleObject>NtReleaseMutant>GetLocalTime
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_129     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] NtReleaseMutant>GetLocalTime>NtWaitForSingleObject
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQueryAttributesFile>CreateDirectoryW>GetSystemTimeAsFileTime
+qakbot_130     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQuerySystemInformation>NtDuplicateObject>NtClose
+      [mechanism/api_seq ] NtQueryAttributesFile>CreateDirectoryW>GetSystemTimeAsFileTime
+qakbot_131     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] NtReleaseMutant>GetLocalTime>NtWaitForSingleObject
+      [mechanism/api_seq ] NtQuerySystemInformation>NtDuplicateObject>NtClose
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_132     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQuerySystemInformation>NtDuplicateObject>NtClose
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtQuerySystemInformation>NtDuplicateObject
+qakbot_133     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtQuerySystemInformation>NtDuplicateObject
+      [mechanism/api_seq ] NtQueryAttributesFile>CreateDirectoryW>GetSystemTimeAsFileTime
+qakbot_134     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] NtReleaseMutant>GetLocalTime>NtWaitForSingleObject
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtQuerySystemInformation>NtDuplicateObject
+qakbot_135     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtQuerySystemInformation>NtDuplicateObject
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtOpenProcess>NtQuerySystemInformation
+qakbot_136     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQuerySystemInformation>NtDuplicateObject>NtClose
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtOpenProcess>NtQuerySystemInformation
+qakbot_137     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQueryAttributesFile>CreateDirectoryW>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtOpenProcess>NtQuerySystemInformation
+qakbot_138     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] NtReleaseMutant>GetLocalTime>NtWaitForSingleObject
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtOpenProcess>NtQuerySystemInformation
+qakbot_139     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>Process32NextW>GetSystemTimeAsFileTime
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtOpenProcess>NtQuerySystemInformation
+qakbot_140     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>Process32NextW>GetSystemTimeAsFileTime
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtQuerySystemInformation>NtDuplicateObject
+qakbot_141     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>Process32NextW>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] NtQuerySystemInformation>NtDuplicateObject>NtClose
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_142     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>Process32NextW>GetSystemTimeAsFileTime
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQueryAttributesFile>CreateDirectoryW>GetSystemTimeAsFileTime
+qakbot_143     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>Process32NextW>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] NtReleaseMutant>GetLocalTime>NtWaitForSingleObject
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_144     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>Process32NextW>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] Process32NextW>GetSystemTimeAsFileTime>Process32NextW
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_145     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] Process32NextW>GetSystemTimeAsFileTime>Process32NextW
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtOpenProcess>NtQuerySystemInformation
+qakbot_146     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] Process32NextW>GetSystemTimeAsFileTime>Process32NextW
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtQuerySystemInformation>NtDuplicateObject
+qakbot_147     mixed           prec=1.0 cov=504
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] Process32NextW>GetSystemTimeAsFileTime>Process32NextW
+      [mechanism/api_seq ] NtQuerySystemInformation>NtDuplicateObject>NtClose
+qakbot_148     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] Process32NextW>GetSystemTimeAsFileTime>Process32NextW
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+      [mechanism/api_seq ] NtQueryAttributesFile>CreateDirectoryW>GetSystemTimeAsFileTime
+qakbot_149     mixed           prec=1.0 cov=504
+      [mechanism/api_seq ] NtReleaseMutant>GetLocalTime>NtWaitForSingleObject
+      [mechanism/api_seq ] Process32NextW>GetSystemTimeAsFileTime>Process32NextW
+      [artifact /command ] ping.exe  -n 6 127.0.0.1
+qakbot_150     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_151     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_152     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_153     mechanism_only  prec=1.0 cov=406
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+qakbot_154     mechanism_only  prec=1.0 cov=406
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_155     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_156     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_157     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+qakbot_158     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_159     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_160     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+qakbot_161     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_162     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+qakbot_163     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_164     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_165     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_166     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+qakbot_167     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_168     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+qakbot_169     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_170     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_171     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+qakbot_172     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_173     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>NtCreateUserProcess
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_174     mechanism_only  prec=1.0 cov=406
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>NtQueryAttributesFile
+      [mechanism/api_seq ] CreateProcessInternalW>NtQueryAttributesFile>RegOpenKeyExA
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] RegCloseKey>SHGetFolderPathW>LdrLoadDll
+qakbot_175     mechanism_only  prec=1.0 cov=274
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] NtOpenEvent>NtOpenProcess>Process32NextW
+qakbot_176     mechanism_only  prec=1.0 cov=274
+      [mechanism/api_seq ] NtOpenProcess>Process32NextW>NtOpenEvent
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_177     mechanism_only  prec=1.0 cov=274
+      [mechanism/api_seq ] Process32NextW>NtOpenEvent>NtOpenProcess
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+qakbot_178     mechanism_only  prec=1.0 cov=274
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+      [mechanism/api_seq ] NtOpenEvent>NtOpenProcess>Process32NextW
+qakbot_179     mechanism_only  prec=1.0 cov=274
+      [mechanism/api_seq ] NtFreeVirtualMemory>NtReleaseMutant>CopyFileExW
+      [mechanism/api_seq ] NtOpenProcess>Process32NextW>NtOpenEvent
+      [mechanism/file    ] %APPDATA%\Microsoft\Jxoqwnx\
+
+================================================================================
+Swisyn  (60 rules)
+================================================================================
+swisyn_60      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_61      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+swisyn_62      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+swisyn_63      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_64      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+swisyn_65      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_66      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_67      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_68      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+swisyn_69      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+swisyn_70      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+swisyn_71      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_72      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_73      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+swisyn_74      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+swisyn_75      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_76      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_77      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_78      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_79      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+swisyn_80      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_81      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_82      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_83      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_84      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_85      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+swisyn_86      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+swisyn_87      mixed           prec=1.0 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+swisyn_88      mixed           prec=0.9995 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+swisyn_89      mixed           prec=0.9995 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_90      mixed           prec=0.9995 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_91      mixed           prec=0.9995 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_92      mixed           prec=0.9995 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+swisyn_93      mixed           prec=0.9995 cov=1976
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenSection>NtMapViewOfSection>RegOpenKeyExW
+      [mechanism/api_seq ] NtQueryValueKey>NtQueryAttributesFile>NtQueryValueKey
+      [mechanism/api_seq ] NtOpenKey>NtQueryValueKey>NtQueryAttributesFile
+swisyn_94      mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtCreateFile>NtClose>GetLocalTime
+swisyn_95      mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+swisyn_96      mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_97      mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_98      mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtCreateFile>NtClose>GetLocalTime
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_99      mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtCreateFile>NtClose>GetLocalTime
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+swisyn_100     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_101     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+swisyn_102     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_103     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+swisyn_104     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_105     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_106     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtClose>NtOpenSection>NtMapViewOfSection
+      [mechanism/api_seq ] NtMapViewOfSection>RegOpenKeyExW>RegQueryValueExW
+swisyn_107     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtMapViewOfSection>RegOpenKeyExW>RegQueryValueExW
+swisyn_108     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_109     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtCreateFile>NtClose>GetLocalTime
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_110     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+swisyn_111     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_112     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+swisyn_113     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_114     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+swisyn_115     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] ReadProcessMemory>Process32NextW>NtOpenProcess
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+swisyn_116     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_117     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtOpenProcess>ReadProcessMemory>Process32NextW
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_118     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] Process32NextW>NtOpenProcess>ReadProcessMemory
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+swisyn_119     mixed           prec=1.0 cov=1975
+      [artifact /file    ] explorer.exe
+      [mechanism/api_seq ] NtOpenKey>NtClose>NtOpenSection
+      [mechanism/api_seq ] NtSetInformationFile>NtReadFile>VarBstrCat
+      [mechanism/api_seq ] VarBstrCat>NtCreateFile>NtQueryInformationFile
+
+================================================================================
+Trickbot  (60 rules)
+================================================================================
+trickbot_180   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/command ] /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_181   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc delete WinDefend
+trickbot_182   mixed           prec=1.0 cov=526
+      [mechanism/command ] /c sc delete WinDefend
+      [artifact /file    ] Windows PowerShell.lnk
+trickbot_183   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+trickbot_184   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/command ] /c sc stop WinDefend
+trickbot_185   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_186   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+trickbot_187   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/registry] DisableNotifications
+trickbot_188   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/command ] powershell  Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_189   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/api_seq ] CreateProcessInternalW>RegOpenKeyExW>RegSetValueExW
+trickbot_190   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/api_seq ] CreateProcessInternalW>CreateToolhelp32Snapshot>Process32FirstW
+trickbot_191   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/registry] DisableAntiSpyware
+trickbot_192   mixed           prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [mechanism/process ] cmd.exe>powershell.exe
+trickbot_193   artifact_only   prec=1.0 cov=526
+      [artifact /file    ] Windows PowerShell.lnk
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_194   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/command ] /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_195   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc delete WinDefend
+trickbot_196   mixed           prec=1.0 cov=526
+      [mechanism/command ] /c sc delete WinDefend
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_197   mixed           prec=1.0 cov=526
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_198   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/command ] /c sc stop WinDefend
+trickbot_199   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_200   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+trickbot_201   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>CoCreateInstance>NtOpenProcess
+trickbot_202   mixed           prec=1.0 cov=526
+      [mechanism/registry] DisableNotifications
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_203   mixed           prec=1.0 cov=526
+      [mechanism/api_seq ] ReadProcessMemory>LdrGetProcedureAddress>RegOpenKeyExW
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_204   mixed           prec=1.0 cov=526
+      [mechanism/command ] powershell  Set-MpPreference -DisableRealtimeMonitoring $true
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_205   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/api_seq ] GetSystemInfo>GlobalMemoryStatus>NtQueryValueKey
+trickbot_206   mixed           prec=1.0 cov=526
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+      [mechanism/api_seq ] CreateProcessInternalW>RegOpenKeyExW>RegSetValueExW
+trickbot_207   mixed           prec=1.0 cov=526
+      [mechanism/api_seq ] CreateProcessInternalW>CreateToolhelp32Snapshot>Process32FirstW
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_208   mixed           prec=1.0 cov=526
+      [mechanism/registry] DisableAntiSpyware
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_209   mixed           prec=1.0 cov=526
+      [mechanism/process ] cmd.exe>powershell.exe
+      [artifact /file    ] %WINDIR%\SysWOW64\%ProgramData%\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\
+trickbot_210   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableAntiSpyware
+      [mechanism/api_seq ] CreateProcessInternalW>CreateToolhelp32Snapshot>Process32FirstW
+trickbot_211   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableAntiSpyware
+      [mechanism/api_seq ] CreateProcessInternalW>RegOpenKeyExW>RegSetValueExW
+trickbot_212   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableNotifications
+      [mechanism/api_seq ] CreateProcessInternalW>RegOpenKeyExW>RegSetValueExW
+trickbot_213   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableNotifications
+      [mechanism/api_seq ] CreateProcessInternalW>CreateToolhelp32Snapshot>Process32FirstW
+trickbot_214   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableAntiSpyware
+      [mechanism/registry] DisableNotifications
+trickbot_215   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableNotifications
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+trickbot_216   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableAntiSpyware
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+trickbot_217   mechanism_only  prec=1.0 cov=578
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_218   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableNotifications
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_219   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+      [mechanism/api_seq ] CreateProcessInternalW>RegOpenKeyExW>RegSetValueExW
+trickbot_220   mechanism_only  prec=1.0 cov=578
+      [mechanism/api_seq ] CreateProcessInternalW>CreateToolhelp32Snapshot>Process32FirstW
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_221   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableAntiSpyware
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_222   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc stop WinDefend
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_223   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc stop WinDefend
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+trickbot_224   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableNotifications
+      [mechanism/command ] /c sc stop WinDefend
+trickbot_225   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc stop WinDefend
+      [mechanism/api_seq ] CreateProcessInternalW>RegOpenKeyExW>RegSetValueExW
+trickbot_226   mechanism_only  prec=1.0 cov=578
+      [mechanism/api_seq ] CreateProcessInternalW>CreateToolhelp32Snapshot>Process32FirstW
+      [mechanism/command ] /c sc stop WinDefend
+trickbot_227   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableAntiSpyware
+      [mechanism/command ] /c sc stop WinDefend
+trickbot_228   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+      [mechanism/command ] /c sc stop WinDefend
+trickbot_229   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_230   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+trickbot_231   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+      [mechanism/registry] DisableNotifications
+trickbot_232   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+      [mechanism/api_seq ] CreateProcessInternalW>RegOpenKeyExW>RegSetValueExW
+trickbot_233   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+      [mechanism/api_seq ] CreateProcessInternalW>CreateToolhelp32Snapshot>Process32FirstW
+trickbot_234   mechanism_only  prec=1.0 cov=578
+      [mechanism/registry] DisableAntiSpyware
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+trickbot_235   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc delete WinDefend
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c sc stop WinDefend
+trickbot_236   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc delete WinDefend
+      [mechanism/command ] /c sc stop WinDefend
+trickbot_237   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc delete WinDefend
+      [mechanism/command ] %SYSTEM32%\cmd.exe /c powershell Set-MpPreference -DisableRealtimeMonitoring $true
+trickbot_238   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc delete WinDefend
+      [mechanism/api_seq ] NtCreateUserProcess>CreateProcessInternalW>CreateToolhelp32Snapshot
+trickbot_239   mechanism_only  prec=1.0 cov=578
+      [mechanism/command ] /c sc delete WinDefend
+      [mechanism/registry] DisableNotifications
+
+================================================================================
+Ursnif  (60 rules)
+================================================================================
+ursnif_420     mixed           prec=1.0 cov=122
+      [mechanism/api_seq ] GetSystemTime>HeapCreate>CreateThread
+      [artifact /file    ] msl0
+ursnif_421     artifact_only   prec=1.0 cov=122
+      [artifact /file    ] \??\mailslot\
+      [artifact /file    ] msl0
+ursnif_422     mixed           prec=1.0 cov=122
+      [mechanism/api_seq ] GetSystemTime>HeapCreate>CreateThread
+      [artifact /file    ] \??\mailslot\
+ursnif_423     mixed           prec=1.0 cov=122
+      [mechanism/api_seq ] GetSystemTime>HeapCreate>CreateThread
+      [artifact /file    ] \??\mailslot\
+      [artifact /file    ] msl0
+ursnif_424     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtProtectVirtualMemory>GetSystemTimeAsFileTime
+      [artifact /command ] %SYSTEM32%\control.exe /?
+ursnif_425     mixed           prec=1.0 cov=120
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [mechanism/api_seq ] NtWriteVirtualMemory>GetSystemTime>NtUnmapViewOfSection
+ursnif_426     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] NtSuspendThread>NtCreateSection>NtMapViewOfSection
+      [artifact /command ] %SYSTEM32%\control.exe /?
+ursnif_427     mixed           prec=1.0 cov=120
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [mechanism/api_seq ] RegCloseKey>DeleteFileW>MoveFileWithProgressW
+ursnif_428     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] RegEnumKeyExA>RegCloseKey>DeleteFileW
+      [artifact /command ] %SYSTEM32%\control.exe /?
+ursnif_429     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] GetSystemTime>HeapCreate>CreateThread
+      [artifact /command ] %SYSTEM32%\control.exe /?
+ursnif_430     artifact_only   prec=1.0 cov=120
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [artifact /file    ] msl0
+ursnif_431     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtProtectVirtualMemory>GetSystemTimeAsFileTime
+      [artifact /file    ] msl0
+ursnif_432     mixed           prec=1.0 cov=120
+      [artifact /file    ] msl0
+      [mechanism/api_seq ] NtWriteVirtualMemory>GetSystemTime>NtUnmapViewOfSection
+ursnif_433     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] NtSuspendThread>NtCreateSection>NtMapViewOfSection
+      [artifact /file    ] msl0
+ursnif_434     mixed           prec=1.0 cov=120
+      [artifact /file    ] msl0
+      [mechanism/api_seq ] RegCloseKey>DeleteFileW>MoveFileWithProgressW
+ursnif_435     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] RegEnumKeyExA>RegCloseKey>DeleteFileW
+      [artifact /file    ] msl0
+ursnif_436     artifact_only   prec=1.0 cov=120
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [artifact /file    ] \??\mailslot\
+ursnif_437     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtProtectVirtualMemory>GetSystemTimeAsFileTime
+      [artifact /file    ] \??\mailslot\
+ursnif_438     mixed           prec=1.0 cov=120
+      [artifact /file    ] \??\mailslot\
+      [mechanism/api_seq ] NtWriteVirtualMemory>GetSystemTime>NtUnmapViewOfSection
+ursnif_439     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] NtSuspendThread>NtCreateSection>NtMapViewOfSection
+      [artifact /file    ] \??\mailslot\
+ursnif_440     mixed           prec=1.0 cov=120
+      [artifact /file    ] \??\mailslot\
+      [mechanism/api_seq ] RegCloseKey>DeleteFileW>MoveFileWithProgressW
+ursnif_441     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] RegEnumKeyExA>RegCloseKey>DeleteFileW
+      [artifact /file    ] \??\mailslot\
+ursnif_442     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [artifact /file    ] \??\mailslot\
+ursnif_443     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [artifact /file    ] \??\mailslot\
+ursnif_444     mixed           prec=1.0 cov=120
+      [artifact /file    ] \??\mailslot\
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_445     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtProtectVirtualMemory>GetSystemTimeAsFileTime
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [mechanism/api_seq ] NtWriteVirtualMemory>GetSystemTime>NtUnmapViewOfSection
+ursnif_446     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] NtSuspendThread>NtCreateSection>NtMapViewOfSection
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [mechanism/api_seq ] NtWriteVirtualMemory>GetSystemTime>NtUnmapViewOfSection
+ursnif_447     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] LdrGetProcedureAddress>NtProtectVirtualMemory>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] NtSuspendThread>NtCreateSection>NtMapViewOfSection
+      [artifact /command ] %SYSTEM32%\control.exe /?
+ursnif_448     mixed           prec=1.0 cov=120
+      [mechanism/api_seq ] NtSuspendThread>NtCreateSection>NtMapViewOfSection
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [mechanism/api_seq ] RegCloseKey>DeleteFileW>MoveFileWithProgressW
+ursnif_449     mixed           prec=1.0 cov=120
+      [artifact /command ] %SYSTEM32%\control.exe /?
+      [mechanism/api_seq ] NtWriteVirtualMemory>GetSystemTime>NtUnmapViewOfSection
+      [mechanism/api_seq ] RegCloseKey>DeleteFileW>MoveFileWithProgressW
+ursnif_450     mechanism_only  prec=0.9926 cov=135
+      [mechanism/api_seq ] LdrLoadDll>LdrGetProcedureAddress>NtProtectVirtualMemory
+      [mechanism/api_seq ] NtOpenProcess>NtClose>LdrLoadDll
+ursnif_451     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_452     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_453     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_454     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+ursnif_455     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+ursnif_456     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+ursnif_457     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_458     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+ursnif_459     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+ursnif_460     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_461     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_462     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_463     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+ursnif_464     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_465     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+ursnif_466     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+ursnif_467     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_468     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_469     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+ursnif_470     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_471     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_472     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_473     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegEnumKeyExA>RegOpenKeyExA>RegQueryValueExW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+ursnif_474     mechanism_only  prec=1.0 cov=133
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>RegCloseKey
+      [mechanism/api_seq ] RegOpenKeyExA>RegQueryValueExW>CreateDirectoryW
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>LsaOpenPolicy
+ursnif_475     mechanism_only  prec=1.0 cov=128
+      [mechanism/api_seq ] NtWriteFile>NtQueryInformationFile>NtSetInformationFile
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] NtCreateFile>NtWriteFile>NtQueryInformationFile
+ursnif_476     mechanism_only  prec=0.9922 cov=128
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+      [mechanism/api_seq ] NtCreateFile>NtWriteFile>NtQueryInformationFile
+ursnif_477     mechanism_only  prec=0.9771 cov=128
+      [mechanism/api_seq ] NtWriteFile>NtQueryInformationFile>NtSetInformationFile
+      [mechanism/api_seq ] LsaOpenPolicy>NtDuplicateObject>NtCreateThreadEx
+ursnif_478     mechanism_only  prec=0.9697 cov=128
+      [mechanism/api_seq ] NtWriteFile>NtQueryInformationFile>NtSetInformationFile
+      [mechanism/api_seq ] NtCreateFile>NtWriteFile>NtQueryInformationFile
+ursnif_479     mechanism_only  prec=0.9919 cov=122
+      [mechanism/api_seq ] LdrLoadDll>LdrGetProcedureAddress>NtProtectVirtualMemory
+      [mechanism/api_seq ] NtOpenProcess>NtClose>LdrLoadDll
+      [mechanism/api_seq ] NtClose>NtCreateFile>NtQueryInformationFile
+
+================================================================================
+Zeus  (60 rules)
+================================================================================
+zeus_360       artifact_only   prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [artifact /mutex   ] Frz_State
+zeus_361       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+zeus_362       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+zeus_363       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+      [artifact /mutex   ] Frz_State
+zeus_364       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+      [artifact /mutex   ] Frz_State
+zeus_365       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] RegOpenKeyExW>CreateToolhelp32Snapshot>Process32FirstW
+      [artifact /mutex   ] Frz_State
+zeus_366       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] LdrGetProcedureAddress>GetSystemTimeAsFileTime>SaferIdentifyLevel
+      [artifact /mutex   ] Frz_State
+zeus_367       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>SaferIdentifyLevel>LdrGetProcedureAddress
+      [artifact /mutex   ] Frz_State
+zeus_368       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] SaferIdentifyLevel>LdrGetProcedureAddress>NtOpenKey
+      [artifact /mutex   ] Frz_State
+zeus_369       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] NtQueryAttributesFile>FindFirstFileExW>DeleteFileW
+      [artifact /mutex   ] Frz_State
+zeus_370       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] FindFirstFileExW>DeleteFileW>NtClose
+      [artifact /mutex   ] Frz_State
+zeus_371       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] NtCreateFile>CreateToolhelp32Snapshot>Process32FirstW
+      [artifact /mutex   ] Frz_State
+zeus_372       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] NtQueryInformationFile>NtClose>RtlDosPathNameToNtPathName_U
+      [artifact /mutex   ] Frz_State
+zeus_373       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] NtQueryInformationFile>NtClose>RtlDosPathNameToNtPathName_U
+zeus_374       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] NtCreateFile>CreateToolhelp32Snapshot>Process32FirstW
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+zeus_375       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] FindFirstFileExW>DeleteFileW>NtClose
+zeus_376       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] NtQueryAttributesFile>FindFirstFileExW>DeleteFileW
+zeus_377       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] SaferIdentifyLevel>LdrGetProcedureAddress>NtOpenKey
+zeus_378       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>SaferIdentifyLevel>LdrGetProcedureAddress
+zeus_379       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] LdrGetProcedureAddress>GetSystemTimeAsFileTime>SaferIdentifyLevel
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+zeus_380       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] RegOpenKeyExW>CreateToolhelp32Snapshot>Process32FirstW
+zeus_381       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] GetVolumeInformationByHandleW>NtClose>FindFirstFileExW
+zeus_382       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] GetVolumeInformationByHandleW>NtClose>FindFirstFileExW
+      [artifact /mutex   ] Frz_State
+zeus_383       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>GlobalMemoryStatusEx
+zeus_384       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>GlobalMemoryStatusEx
+      [artifact /mutex   ] Frz_State
+zeus_385       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+      [artifact /mutex   ] Frz_State
+zeus_386       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+      [artifact /mutex   ] Frz_State
+zeus_387       mixed           prec=1.0 cov=219
+      [artifact /mutex   ] Sandboxie_SingleInstanceMutex_Control
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+zeus_388       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+      [artifact /mutex   ] Frz_State
+zeus_389       mixed           prec=1.0 cov=219
+      [mechanism/api_seq ] LdrGetProcedureAddress>GetSystemTimeAsFileTime>SaferIdentifyLevel
+      [mechanism/api_seq ] RegOpenKeyExW>CreateToolhelp32Snapshot>Process32FirstW
+      [artifact /mutex   ] Frz_State
+zeus_390       mechanism_only  prec=0.9944 cov=177
+      [mechanism/api_seq ] NtClose>GetSystemTimeAsFileTime>SHGetFolderPathW
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>SHGetFolderPathW>GetVolumeNameForVolumeMountPointW
+zeus_391       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_392       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCloseKey>GetComputerNameW>RegOpenKeyExW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_393       mechanism_only  prec=1.0 cov=163
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+zeus_394       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_395       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] NtOpenMutant>ReadProcessMemory>NtQueryAttributesFile
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_396       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCreateKeyExW>RegQueryInfoKeyW>RegEnumKeyW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_397       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegQueryInfoKeyW>RegEnumKeyW>RegQueryInfoKeyW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_398       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegEnumKeyW>RegQueryInfoKeyW>RegEnumKeyW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_399       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegQueryInfoKeyW>RegEnumKeyW>RegCreateKeyExW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_400       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegEnumKeyW>RegCreateKeyExW>RegCloseKey
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_401       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCloseKey>RegQueryInfoKeyW>RegEnumKeyW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_402       mechanism_only  prec=1.0 cov=163
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+      [mechanism/api_seq ] NtCreateFile>GetSystemTime>NtQueryAttributesFile
+zeus_403       mechanism_only  prec=1.0 cov=163
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+      [mechanism/api_seq ] NtQueryAttributesFile>NtCreateFile>GetSystemTime
+zeus_404       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] GetSystemTime>NtQueryAttributesFile>NtCreateFile
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_405       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] NtQueryInformationFile>NtClose>RtlDosPathNameToNtPathName_U
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_406       mechanism_only  prec=1.0 cov=163
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>GlobalMemoryStatusEx
+zeus_407       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCloseKey>GetComputerNameW>RegOpenKeyExW
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_408       mechanism_only  prec=1.0 cov=163
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+zeus_409       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_410       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] NtOpenMutant>ReadProcessMemory>NtQueryAttributesFile
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_411       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/api_seq ] RegCreateKeyExW>RegQueryInfoKeyW>RegEnumKeyW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_412       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegQueryInfoKeyW>RegEnumKeyW>RegQueryInfoKeyW
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_413       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegEnumKeyW>RegQueryInfoKeyW>RegEnumKeyW
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_414       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegQueryInfoKeyW>RegEnumKeyW>RegCreateKeyExW
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_415       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegEnumKeyW>RegCreateKeyExW>RegCloseKey
+      [mechanism/api_seq ] RegCreateKeyExW>RegCloseKey>GetComputerNameW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_416       mechanism_only  prec=1.0 cov=163
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+      [mechanism/api_seq ] RegCloseKey>GetComputerNameW>RegOpenKeyExW
+      [mechanism/api_seq ] RegCloseKey>GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U
+zeus_417       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCloseKey>GetComputerNameW>RegOpenKeyExW
+      [mechanism/api_seq ] GlobalMemoryStatusEx>RtlDosPathNameToNtPathName_U>NtOpenFile
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_418       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] NtOpenMutant>ReadProcessMemory>NtQueryAttributesFile
+      [mechanism/api_seq ] RegCloseKey>GetComputerNameW>RegOpenKeyExW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+zeus_419       mechanism_only  prec=1.0 cov=163
+      [mechanism/api_seq ] RegCloseKey>GetComputerNameW>RegOpenKeyExW
+      [mechanism/api_seq ] RegCreateKeyExW>RegQueryInfoKeyW>RegEnumKeyW
+      [mechanism/file    ] %APPDATA%\Spotify\Apps\
+
+================================================================================
+njRAT  (60 rules)
+================================================================================
+njrat_300      mixed           prec=1.0 cov=356
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_301      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_302      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_303      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_304      mixed           prec=1.0 cov=353
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_305      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_306      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_307      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_308      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_309      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_310      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_311      mixed           prec=1.0 cov=353
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_312      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_313      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_314      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_315      mixed           prec=1.0 cov=353
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_316      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_317      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_318      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_319      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_320      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_321      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_322      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_323      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] RegCloseKey>FindFirstFileExW>NtClose
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_324      mixed           prec=1.0 cov=351
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      [mechanism/api_seq ] NtClose>GetSystemInfo>NtQueryAttributesFile
+      [mechanism/api_seq ] FindFirstFileExW>NtClose>GetSystemInfo
+      [mechanism/api_seq ] LdrGetProcedureAddress>RegQueryValueExW>LdrGetProcedureAddress
+njrat_325      mixed           prec=1.0 cov=349
+      [mechanism/api_seq ] GetSystemInfo>NtQueryAttributesFile>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_326      mixed           prec=1.0 cov=349
+      [mechanism/api_seq ] GetSystemInfo>LdrGetProcedureAddress>GetSystemInfo
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_327      mixed           prec=1.0 cov=349
+      [mechanism/api_seq ] RegOpenKeyExW>GetSystemInfo>FindFirstFileExW
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_328      mixed           prec=1.0 cov=349
+      [mechanism/api_seq ] GetSystemInfo>FindFirstFileExW>NtAllocateVirtualMemory
+      [artifact /registry] HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+njrat_329      mixed           prec=1.0 cov=349
+      [artifact /mutex   ] Global\.net clr networking
+      [mechanism/api_seq ] RegQueryValueExW>RegCloseKey>FindFirstFileExW
+njrat_330      mechanism_only  prec=0.9739 cov=149
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetProcedureAddress>LdrLoadDll
+njrat_331      mechanism_only  prec=0.9919 cov=122
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] CreateThread>NtResumeThread>NtAllocateVirtualMemory
+njrat_332      mechanism_only  prec=0.9593 cov=118
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQuerySystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+njrat_333      mechanism_only  prec=0.9844 cov=63
+      [mechanism/api_seq ] NtClose>NtCreateKey>NtClose
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+njrat_334      mechanism_only  prec=1.0 cov=57
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtQuerySystemInformation>GetSystemTimeAsFileTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+njrat_335      mechanism_only  prec=1.0 cov=54
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQuerySystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] NtQueryAttributesFile>LdrGetProcedureAddress>LdrLoadDll
+njrat_336      mechanism_only  prec=1.0 cov=46
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQuerySystemTime
+      [mechanism/api_seq ] CreateThread>NtResumeThread>NtAllocateVirtualMemory
+njrat_337      mechanism_only  prec=1.0 cov=46
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQuerySystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] CreateThread>NtResumeThread>NtAllocateVirtualMemory
+njrat_338      mechanism_only  prec=0.9787 cov=46
+      [mechanism/api_seq ] LdrGetProcedureAddress>LdrLoadDll>NtClose
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>NtQuerySystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+njrat_339      mechanism_only  prec=0.9756 cov=40
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_340      mechanism_only  prec=0.9756 cov=40
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+njrat_341      mechanism_only  prec=1.0 cov=38
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_342      mechanism_only  prec=1.0 cov=38
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_343      mechanism_only  prec=1.0 cov=38
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_344      mechanism_only  prec=1.0 cov=38
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrGetDllHandle>NtQuerySystemInformation
+      [mechanism/api_seq ] CreateThread>NtResumeThread>NtAllocateVirtualMemory
+njrat_345      mechanism_only  prec=0.9744 cov=38
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+njrat_346      mechanism_only  prec=0.9744 cov=38
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_347      mechanism_only  prec=0.9744 cov=38
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrGetDllHandle>NtQuerySystemInformation
+      [mechanism/api_seq ] CreateThread>NtResumeThread>NtAllocateVirtualMemory
+njrat_348      mechanism_only  prec=1.0 cov=37
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_349      mechanism_only  prec=1.0 cov=37
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle
+      [mechanism/api_seq ] LdrGetDllHandle>NtCreateFile>NtQueryInformationFile
+njrat_350      mechanism_only  prec=1.0 cov=37
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+njrat_351      mechanism_only  prec=1.0 cov=37
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_352      mechanism_only  prec=1.0 cov=37
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_353      mechanism_only  prec=1.0 cov=37
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle
+      [mechanism/api_seq ] LdrGetDllHandle>NtCreateFile>NtQueryInformationFile
+njrat_354      mechanism_only  prec=1.0 cov=37
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_355      mechanism_only  prec=0.9737 cov=37
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+njrat_356      mechanism_only  prec=1.0 cov=36
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle
+njrat_357      mechanism_only  prec=1.0 cov=36
+      [mechanism/api_seq ] socket>bind>listen
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle
+njrat_358      mechanism_only  prec=1.0 cov=36
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle
+      [mechanism/api_seq ] GetSystemTimeAsFileTime>NtWaitForSingleObject>select
+njrat_359      mechanism_only  prec=1.0 cov=36
+      [mechanism/api_seq ] NtAllocateVirtualMemory>LdrLoadDll>GetSystemTime
+      [mechanism/api_seq ] NtAllocateVirtualMemory>NtReadFile>NtAllocateVirtualMemory
+      [mechanism/api_seq ] LdrGetDllHandle>NtFreeVirtualMemory>LdrGetDllHandle

@@ -1,0 +1,430 @@
+========================================================================
+Emotet       df4fd49dc53618d7f3a1   (626 predicates)
+  [mutex]  n=4
+      artifact  mutex            PEM9B4
+      artifact  mutex            PEM938
+      artifact  mutex            Global\I5C3A8244
+      artifact  mutex            Global\M5C3A8244
+  [file]  n=2
+      mechanism drop_persist_dir %LOCALAPPDATA%\iproppass\
+      artifact  drop_name        iproppass.exe
+  [command]  n=1
+      artifact  cmd              %TEMP%\DF4FD49DC53618D7F3A1.exe
+  [process]  n=1
+      mechanism self_relaunch    df4fd49dc53618d7f3a1.exe
+  [api_seq]  n=618
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>LdrGetProcedureAddress
+      mechanism api_3gram        GetSystemTimeAsFileTime>LdrGetProcedureAddress>HeapCreate
+      mechanism api_3gram        LdrGetProcedureAddress>HeapCreate>LdrGetDllHandle
+      mechanism api_3gram        HeapCreate>LdrGetDllHandle>LdrGetProcedureAddress
+      mechanism api_3gram        LdrGetDllHandle>LdrGetProcedureAddress>LdrGetDllHandle
+      mechanism api_3gram        LdrGetProcedureAddress>LdrGetDllHandle>LdrGetProcedureAddress
+      ... (+610 more api_3grams)
+========================================================================
+Swisyn       b0ec4f3c183c1055b98f   (497 predicates)
+  [file]  n=4
+      artifact  drop_dir         %TEMP%\
+      artifact  drop_name        ~DFAC9913394DDFD211.TMP
+      artifact  drop_dir         %WINDIR%\system\
+      artifact  drop_name        explorer.exe
+  [command]  n=1
+      artifact  cmd              %WINDIR%\system\explorer.exe
+  [api_seq]  n=492
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>RegOpenKeyExA
+      mechanism api_3gram        GetSystemTimeAsFileTime>RegOpenKeyExA>LdrGetDllHandle
+      mechanism api_3gram        RegOpenKeyExA>LdrGetDllHandle>LdrGetProcedureAddress
+      mechanism api_3gram        LdrGetDllHandle>LdrGetProcedureAddress>HeapCreate
+      mechanism api_3gram        LdrGetProcedureAddress>HeapCreate>NtAllocateVirtualMemory
+      mechanism api_3gram        HeapCreate>NtAllocateVirtualMemory>memcpy
+      ... (+484 more api_3grams)
+========================================================================
+Emotet       65fc7f0a79d3052e4919   (968 predicates)
+  [mutex]  n=6
+      artifact  mutex            PEMAA4
+      artifact  mutex            PEM2E4
+      artifact  mutex            Global\I5C3A8244
+      artifact  mutex            Global\M5C3A8244
+      artifact  mutex            PEMA34
+      artifact  mutex            PEMB84
+  [registry]  n=1
+      artifact  reg_write        HKEY_LOCAL_MACHINE\Software\Microsoft\Tracing
+  [file]  n=2
+      mechanism drop_persist_dir %LOCALAPPDATA%\Microsoft\Windows\
+      artifact  drop_name        duplexcatch.exe
+  [network]  n=9
+      artifact  host_ip          70.117.34.154
+      artifact  host_ip          104.166.245.140
+      artifact  host_ip          24.167.25.9
+      artifact  host_ip          73.52.173.117
+      artifact  host_ip          73.49.109.200
+      artifact  host_ip          65.101.77.240
+      artifact  host_ip          98.220.219.68
+      artifact  host_ip          93.88.93.99
+      artifact  host_ip          203.94.66.109
+  [command]  n=2
+      artifact  cmd              %TEMP%\65FC7F0A79D3052E4919.exe
+      artifact  cmd              %LOCALAPPDATA%\Microsoft\Windows\duplexcatch.exe
+  [process]  n=2
+      mechanism self_relaunch    65fc7f0a79d3052e4919.exe
+      mechanism self_relaunch    duplexcatch.exe
+  [api_seq]  n=946
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>LdrGetProcedureAddress
+      mechanism api_3gram        GetSystemTimeAsFileTime>LdrGetProcedureAddress>NtCreateMutant
+      mechanism api_3gram        LdrGetProcedureAddress>NtCreateMutant>NtOpenMutant
+      mechanism api_3gram        NtCreateMutant>NtOpenMutant>RegOpenKeyExA
+      mechanism api_3gram        NtOpenMutant>RegOpenKeyExA>HeapCreate
+      mechanism api_3gram        RegOpenKeyExA>HeapCreate>LdrGetDllHandle
+      ... (+938 more api_3grams)
+========================================================================
+Adload       a0b05099b8af76437092   (321 predicates)
+  [command]  n=1
+      artifact  cmd              %TEMP%\A0B05099B8AF76437092.exe
+  [api_seq]  n=320
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>HeapCreate
+      mechanism api_3gram        GetSystemTimeAsFileTime>HeapCreate>LdrGetDllHandle
+      mechanism api_3gram        HeapCreate>LdrGetDllHandle>LdrGetProcedureAddress
+      mechanism api_3gram        LdrGetDllHandle>LdrGetProcedureAddress>LdrGetDllHandle
+      mechanism api_3gram        LdrGetProcedureAddress>LdrGetDllHandle>LdrGetProcedureAddress
+      mechanism api_3gram        LdrGetProcedureAddress>LdrGetDllHandle>memcpy
+      ... (+312 more api_3grams)
+========================================================================
+Ursnif       b55ce056ca9a10c10701   (102 predicates)
+  [mutex]  n=1
+      artifact  mutex            U4gds89g46dfgs
+  [registry]  n=1
+      artifact  reg_write        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
+  [network]  n=1
+      artifact  host_ip          5.188.231.198
+  [api_seq]  n=99
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtQueryValueKey
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtQueryValueKey>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtQueryValueKey>GetSystemTimeAsFileTime>HeapCreate
+      mechanism api_3gram        GetSystemTimeAsFileTime>HeapCreate>LdrGetDllHandle
+      mechanism api_3gram        HeapCreate>LdrGetDllHandle>LdrGetProcedureAddress
+      mechanism api_3gram        LdrGetDllHandle>LdrGetProcedureAddress>LdrGetDllHandle
+      ... (+91 more api_3grams)
+========================================================================
+Zeus         f12f3d48bfaf24f161e9   (451 predicates)
+  [mutex]  n=11
+      artifact  mutex            27F7FFA07BD0546DF3E613F21C61F3E9
+      artifact  mutex            0E0632600D5B4E4BE2E08ADDA92A68FC
+      artifact  mutex            Sandboxie_SingleInstanceMutex_Control
+      artifact  mutex            Frz_State
+      artifact  mutex            719B3C62C6D39623130B3D4D8471639E
+      artifact  mutex            2E8E1EC73A7EF57D0A2EFC20A076C8C7
+      artifact  mutex            25ACBEE4D1ED31A66947395E400E2A8C
+      artifact  mutex            C54D473E0189271FF9D1060019750AD7
+      artifact  mutex            41FAF9DBF6A40AADB48ED02FF78A74FB
+      artifact  mutex            E07D7AEEA0471D4FE8FDF2AEB037108A
+      artifact  mutex            CE44AD48689CF23CB7C7B3314212B406
+  [registry]  n=23
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Fax
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\IME
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\IAM
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\CTF
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\FTP
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Ofewbo
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Direct3D
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\wfs
+      artifact  reg_write        HKEY_CURRENT_USER\SOFTWARE\Microsoft
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Installer
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Evihyq
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Notepad
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Fyybt
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Yqur
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Feeds
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\MSF
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\GDIPlus
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\SideShow
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Keyboard
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Windows
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Uhehfi
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Wisp
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\WAB
+  [file]  n=8
+      artifact  drop_dir         %TEMP%\
+      artifact  drop_name        upd3c50d117.bat
+      artifact  drop_name        F12F3D48BFAF24F161E9.exe
+      mechanism drop_persist_dir %APPDATA%\Spotify\Apps\
+      artifact  drop_name        Spotify.exe
+      artifact  drop_name        SpotifyStartupTask.ohk
+      artifact  drop_name        prefs.coi
+      artifact  drop_name        pt-BR.cao
+  [network]  n=3
+      artifact  host_ip          172.217.23.238
+      artifact  host_ip          172.217.23.195
+      artifact  host_ip          172.217.130.73
+  [command]  n=3
+      artifact  cmd              %APPDATA%\Spotify\Apps\Spotify.exe
+      mechanism cmd_technique    %SYSTEM32%\cmd.exe" /c "%TEMP%\upd3c50d117.bat
+      artifact  cmd              %WINDIR%\SysWOW64\svchost.exe -k netsvcs
+  [process]  n=1
+      mechanism spawn_lolbin     f12f3d48bfaf24f161e9.exe>cmd.exe
+  [api_seq]  n=402
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtClose
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtClose>NtOpenKey
+      mechanism api_3gram        NtClose>NtOpenKey>NtQueryValueKey
+      mechanism api_3gram        NtOpenKey>NtQueryValueKey>NtClose
+      mechanism api_3gram        NtQueryValueKey>NtClose>NtOpenKey
+      mechanism api_3gram        NtOpenKey>NtQueryValueKey>NtAllocateVirtualMemory
+      ... (+394 more api_3grams)
+========================================================================
+Emotet       997143968655dbe86c64   (829 predicates)
+  [mutex]  n=6
+      artifact  mutex            PEM858
+      artifact  mutex            PEM6A4
+      artifact  mutex            Global\I5C3A8244
+      artifact  mutex            Global\M5C3A8244
+      artifact  mutex            PEM5E8
+      artifact  mutex            PEM878
+  [file]  n=2
+      mechanism drop_persist_dir %LOCALAPPDATA%\Microsoft\Windows\
+      artifact  drop_name        scalaraccount.exe
+  [network]  n=7
+      artifact  host_ip          92.129.84.121
+      artifact  host_ip          81.28.204.179
+      artifact  host_ip          154.0.171.246
+      artifact  host_ip          117.193.151.136
+      artifact  host_ip          59.100.1.89
+      artifact  host_ip          88.249.182.27
+      artifact  host_ip          125.99.157.3
+  [command]  n=2
+      artifact  cmd              %TEMP%\997143968655DBE86C64.exe
+      artifact  cmd              %LOCALAPPDATA%\Microsoft\Windows\scalaraccount.exe
+  [process]  n=2
+      mechanism self_relaunch    997143968655dbe86c64.exe
+      mechanism self_relaunch    scalaraccount.exe
+  [api_seq]  n=810
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>RegOpenKeyExW
+      mechanism api_3gram        NtDelayExecution>RegOpenKeyExW>NtQueryValueKey
+      mechanism api_3gram        RegOpenKeyExW>NtQueryValueKey>NtWaitForSingleObject
+      mechanism api_3gram        NtQueryValueKey>NtWaitForSingleObject>GetSystemTime
+      mechanism api_3gram        NtWaitForSingleObject>GetSystemTime>GetLastInputInfo
+      mechanism api_3gram        GetSystemTime>GetLastInputInfo>GetSystemTime
+      ... (+802 more api_3grams)
+========================================================================
+Zeus         8d0388cd3ed134e0fa5c   (359 predicates)
+  [mutex]  n=8
+      artifact  mutex            8E4C0739757CC0A9D6E13A55A2ACF47C
+      artifact  mutex            F6715962A55CBC527D99DACA499E41FA
+      artifact  mutex            Sandboxie_SingleInstanceMutex_Control
+      artifact  mutex            Frz_State
+      artifact  mutex            A3B3EF94316C8ACFFAB5A12FFB490DEB
+      artifact  mutex            29670DCB823DE62BCE84616CBAC5702E
+      artifact  mutex            248798ADD68DA67470418C8023118DD8
+      artifact  mutex            D5E3DA6B553AED7E2CD3AE226637E5F6
+  [registry]  n=24
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Fax
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\IME
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\IAM
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\CTF
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\FTP
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Direct3D
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Syiby
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Installer
+      artifact  reg_write        HKEY_CURRENT_USER\SOFTWARE\Microsoft
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\wfs
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Notepad
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Abwaes
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\PeerNet
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Neaw
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Feeds
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\MSF
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Speech
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\GDIPlus
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\SideShow
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Keyboard
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Windows
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Oqyqwi
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Wisp
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\WAB
+  [file]  n=8
+      artifact  drop_dir         %TEMP%\
+      artifact  drop_name        upd2b647e29.bat
+      mechanism drop_persist_dir %APPDATA%\Spotify\Apps\
+      artifact  drop_name        nb.yxz
+      artifact  drop_name        zh-TW.ufl
+      artifact  drop_name        snapshot_blob.dio
+      artifact  drop_name        sv.exe
+      artifact  drop_name        8D0388CD3ED134E0FA5C.exe
+  [command]  n=3
+      artifact  cmd              %APPDATA%\Spotify\Apps\sv.exe
+      mechanism cmd_technique    %SYSTEM32%\cmd.exe" /c "%TEMP%\upd2b647e29.bat
+      artifact  cmd              %WINDIR%\SysWOW64\svchost.exe -k netsvcs
+  [process]  n=1
+      mechanism spawn_lolbin     8d0388cd3ed134e0fa5c.exe>cmd.exe
+  [api_seq]  n=315
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtQueryValueKey
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtQueryValueKey>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtQueryValueKey>GetSystemTimeAsFileTime>HeapCreate
+      mechanism api_3gram        GetSystemTimeAsFileTime>HeapCreate>LdrGetDllHandle
+      mechanism api_3gram        HeapCreate>LdrGetDllHandle>LdrGetProcedureAddress
+      mechanism api_3gram        LdrGetDllHandle>LdrGetProcedureAddress>LdrGetDllHandle
+      ... (+307 more api_3grams)
+========================================================================
+Qakbot       f114deeb888d7e5a1dca   (480 predicates)
+  [mutex]  n=8
+      artifact  mutex            F114DEEB888D7E5A1DCAa
+      artifact  mutex            ioqul
+      artifact  mutex            Global\jxoqwn
+      artifact  mutex            Global\ldgyyhis
+      artifact  mutex            F114DEEB888D7E5A1DCA/C
+      artifact  mutex            jxoqwna
+      artifact  mutex            {6267FB33-9EFD-49D8-991E-08A6F34FFE7A}
+      artifact  mutex            jxoqwn/C
+  [file]  n=5
+      mechanism drop_persist_dir %APPDATA%\Microsoft\Jxoqwnx\
+      artifact  drop_name        jxoqwn.exe
+      artifact  drop_name        jxoqw.dat
+      artifact  drop_dir         %TEMP%\
+      artifact  drop_name        F114DEEB888D7E5A1DCA.exe
+  [network]  n=1
+      artifact  host_ip          40.113.10.47
+  [command]  n=8
+      artifact  cmd              %TEMP%\F114DEEB888D7E5A1DCA.exe" /C
+      artifact  cmd              %APPDATA%\Microsoft\Jxoqwnx\jxoqwn.exe
+      mechanism cmd_technique    %SYSTEM32%\cmd.exe"  /c ping.exe -n 6 127.0.0.1 &  type "%SYSTEM32%\calc.exe" > "%TEMP%\F1
+      mechanism cmd_technique    cmd.exe /c ping.exe -n 6 127.0.0.1 &  type "%SYSTEM32%\calc.exe" > "%TEMP%\F114DEEB888D7E5
+      artifact  cmd              %APPDATA%\Microsoft\Jxoqwnx\jxoqwn.exe" /C
+      artifact  cmd              %WINDIR%\SysWOW64\explorer.exe
+      artifact  cmd              ping.exe  -n 6 127.0.0.1
+      artifact  cmd              %SYSTEM32%\PING.EXE ping.exe  -n 6 127.0.0.1
+  [process]  n=3
+      mechanism self_relaunch    f114deeb888d7e5a1dca.exe
+      mechanism spawn_lolbin     f114deeb888d7e5a1dca.exe>cmd.exe
+      mechanism self_relaunch    jxoqwn.exe
+  [api_seq]  n=455
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>RegOpenKeyExA
+      mechanism api_3gram        GetSystemTimeAsFileTime>RegOpenKeyExA>NtOpenKey
+      mechanism api_3gram        RegOpenKeyExA>NtOpenKey>NtQueryValueKey
+      mechanism api_3gram        NtOpenKey>NtQueryValueKey>NtClose
+      mechanism api_3gram        NtQueryValueKey>NtClose>NtCreateFile
+      mechanism api_3gram        NtClose>NtCreateFile>NtCreateSection
+      ... (+447 more api_3grams)
+========================================================================
+Emotet       37d23cec92c93e26946e   (886 predicates)
+  [mutex]  n=6
+      artifact  mutex            PEM958
+      artifact  mutex            PEM658
+      artifact  mutex            Global\I5C3A8244
+      artifact  mutex            Global\M5C3A8244
+      artifact  mutex            PEMA44
+      artifact  mutex            PEM638
+  [registry]  n=1
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\1\WHCIcon
+  [file]  n=2
+      mechanism drop_persist_dir %LOCALAPPDATA%\iproppass\
+      artifact  drop_name        iproppass.exe
+  [network]  n=11
+      artifact  host_ip          181.197.14.204
+      artifact  host_ip          85.75.118.245
+      artifact  host_ip          190.186.38.22
+      artifact  host_ip          181.177.213.144
+      artifact  host_ip          172.217.130.70
+      artifact  host_ip          181.39.166.254
+      artifact  host_ip          181.143.126.170
+      artifact  host_ip          94.70.164.109
+      artifact  host_ip          190.186.42.98
+      artifact  host_ip          217.165.127.208
+      artifact  host_ip          172.217.23.238
+  [command]  n=2
+      artifact  cmd              %TEMP%\37D23CEC92C93E26946E.exe
+      artifact  cmd              %LOCALAPPDATA%\iproppass\iproppass.exe
+  [process]  n=2
+      mechanism self_relaunch    37d23cec92c93e26946e.exe
+      mechanism self_relaunch    iproppass.exe
+  [api_seq]  n=862
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>RegOpenKeyExW
+      mechanism api_3gram        NtDelayExecution>RegOpenKeyExW>RegQueryValueExW
+      mechanism api_3gram        RegOpenKeyExW>RegQueryValueExW>RegCloseKey
+      mechanism api_3gram        RegQueryValueExW>RegCloseKey>LdrGetProcedureAddress
+      mechanism api_3gram        RegCloseKey>LdrGetProcedureAddress>HeapCreate
+      mechanism api_3gram        LdrGetProcedureAddress>HeapCreate>NtCreateMutant
+      ... (+854 more api_3grams)
+========================================================================
+njRAT        83dffd621efa44cf1a60   (1146 predicates)
+  [mutex]  n=4
+      artifact  mutex            bitsperf
+      artifact  mutex            Global\CLR_CASOFF_MUTEX
+      artifact  mutex            10e93180d6481ad63a77c2b255d40864
+      artifact  mutex            Global\.net clr networking
+  [registry]  n=9
+      artifact  reg_write        HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\napagent\LocalConfig\UI
+      artifact  reg_write        HKEY_LOCAL_MACHINE\Software\Microsoft\Fusion\GACChangeNotification\Default
+      artifact  reg_write        HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\napagent\LocalConfig\Enroll\HcsGroups
+      artifact  reg_write        HKEY_CURRENT_USER\Software\10e93180d6481ad63a77c2b255d40864\[kl]
+      artifact  reg_write        HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\IPSEC\Policy\Local
+      artifact  reg_write        HKEY_CURRENT_USER\Environment\SEE_MASK_NOZONECHECKS
+      artifact  reg_write        HKEY_CURRENT_USER\di
+      artifact  reg_write        HKEY_CURRENT_USER\Software\10e93180d6481ad63a77c2b255d40864
+      mechanism reg_persist      HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NapAgent\LocalConfig
+  [file]  n=7
+      artifact  drop_dir         %USERPROFILE%\service\
+      artifact  drop_name        svchost.exe
+      mechanism drop_persist_dir %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\
+      artifact  drop_name        Host Process for Windows Services.url
+      artifact  drop_name        Host Process for Windows Services.vbs
+      artifact  drop_dir         \Device\Http\
+      artifact  drop_name        Communication
+  [network]  n=2
+      artifact  host_ip          192.254.74.210
+      artifact  domain           soft98.linkpc.net
+  [command]  n=2
+      artifact  cmd              %WINDIR%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe
+      artifact  cmd              netsh firewall add allowedprogram "%WINDIR%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe"
+  [api_seq]  n=1122
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemInfo
+      mechanism api_3gram        NtDelayExecution>GetSystemInfo>NtAddAtom
+      mechanism api_3gram        GetSystemInfo>NtAddAtom>NtOpenFile
+      mechanism api_3gram        NtAddAtom>NtOpenFile>NtCreateSection
+      mechanism api_3gram        NtOpenFile>NtCreateSection>NtMapViewOfSection
+      mechanism api_3gram        NtCreateSection>NtMapViewOfSection>NtOpenKey
+      ... (+1114 more api_3grams)
+========================================================================
+Swisyn       da3c325473aa30ac5ad6   (474 predicates)
+  [registry]  n=2
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Sysinternals\PsFile\EulaAccepted
+      artifact  reg_write        HKEY_CURRENT_USER\Software\Sysinternals\PsFile
+  [file]  n=7
+      artifact  drop_dir         %TEMP%\
+      artifact  drop_name        ~DFA6AF19F640CE5948.TMP
+      artifact  drop_name        da3c325473aa30ac5ad6.exe
+      artifact  drop_dir         %WINDIR%\Resources\Themes\
+      artifact  drop_name        icsys.icn.exe
+      artifact  drop_dir         %TEMP%\da3c325473aa30ac5ad6.exe\
+      artifact  drop_name        xa0
+  [command]  n=2
+      artifact  cmd              %TEMP%\da3c325473aa30ac5ad6.exe\xa0
+      artifact  cmd              %WINDIR%\Resources\Themes\icsys.icn.exe
+  [api_seq]  n=463
+      mechanism api_3gram        GetSystemTimeAsFileTime>NtDelayExecution>GetSystemTimeAsFileTime
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>NtDelayExecution
+      mechanism api_3gram        NtDelayExecution>GetSystemTimeAsFileTime>RegOpenKeyExA
+      mechanism api_3gram        GetSystemTimeAsFileTime>RegOpenKeyExA>LdrGetDllHandle
+      mechanism api_3gram        RegOpenKeyExA>LdrGetDllHandle>LdrGetProcedureAddress
+      mechanism api_3gram        LdrGetDllHandle>LdrGetProcedureAddress>HeapCreate
+      mechanism api_3gram        LdrGetProcedureAddress>HeapCreate>NtAllocateVirtualMemory
+      mechanism api_3gram        HeapCreate>NtAllocateVirtualMemory>memcpy
+      ... (+455 more api_3grams)

@@ -1,0 +1,38 @@
+# data & large artifacts (never commit)
+data/
+*.zip
+*.parquet
+public_labels.csv
+public_full_reports/
+sample_report_*.json
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+
+# os / editor
+.DS_Store
+.vscode/
+
+# parse logs
+reports/full_parse.log
+reports/*.log
+
+# private / not ready for publication
+CLAUDE.md
+PLAN.md
+sop_*.md
+METHODOLOGY.md
+paper/
+*.bak
+*.bak2
+
+# latex build files
+*.aux
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
