@@ -21,12 +21,6 @@ __pycache__/
 reports/full_parse.log
 reports/*.log
 
-# private / not ready for publication
-CLAUDE.md
-PLAN.md
-sop_*.md
-METHODOLOGY.md
-paper/
 *.bak
 *.bak2
 
